@@ -1,0 +1,79 @@
+.news{
+    margin: 0 auto;
+}
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.conteiner{
+    width: 82%;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* border: 1px solid black; */
+    margin-bottom: 20px;
+}
+.new{
+    padding:20px;
+    margin-top: 20px;
+    border-radius:20px;
+    background-color: rgb(180, 224, 176);
+    /* border: 1px solid rgb(129, 184, 126); */
+    font-size: 110%;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.624);
+}
+.new > .flexer > p{
+    width: 50%;
+    font-size: 100%;
+    padding: 10px;
+}
+.new > .flexer > img{
+    width: 45%;
+}
+.flexer{
+    display: flex;
+    align-items: center;
+}
+.new{
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .7s ease;
+    transition: all .5s ease;
+    transform: scale(0);
+}
+.new._active{
+    opacity: 1;
+    margin-right: 0px;
+    transform: scale(1);
+    -webkit-transition: all .7s ease;
+    -moz-transition: all .7s ease;
+    transition: all .7s ease;
+}
+.news-title-r{
+    opacity: 1;
+    width: 200px;
+    margin: 0 auto;
+    transform: scale(1);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .7s ease;
+    transition: all .5s ease;
+    animation: newser 0.4s ease;
+}
+
+@keyframes newser {
+    0%{transform: scale(3); opacity: 1;} 
+    100%{transform: scale(1);}
+}
+@-webkit-keyframes newser {
+    0%{transform: scale(3);}
+    100%{transform: scale(1);}
+}
+/* .news-title-r._active{
+    opacity: 1;
+    transform: scale(1);
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .7s ease;
+    transition: all .5s ease;
+} */

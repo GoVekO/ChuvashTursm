@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт по развитию туризма в Чувашии</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <script src="./js/main.js"></script>
+    <link rel="preload" href="/local/templates/main/assets/css/fonts.css?15882481425209" >
+    <link rel="stylesheet" href="/local/templates/main/assets/css/fonts.css?15882481425209">
+    <link rel="stylesheet" href="./css/menu.css">
+</head>
+<body>
+    
+<input type="checkbox" id="nav-toggle" hidden>
+<nav class="nav">
+<label for="nav-toggle" class="nav-toggle" onclick></label>
+<h2 class="logo"> <a href="./index.html">Чувашия</a> </h2>
+<ul>
+    <li><a href="./index.html">Главная</a>
+    <li><a href="./index2.html">Музеи</a>
+    <li><a href="#2">Экскурсии</a>
+    <li><a href="#2">Туры</a>
+    <li><a href="./contacts.html" class="contacts">Контакты</a>
+</ul>
+</nav>
+
+<main>
+    <div class="container">
+        <header class="header">
+            <div class="Logo"><a href="index.html"><img src="./img/logotip.jpg" alt="Logo" width="128" height="72" style="margin-left: 50px; border-radius: 20px; margin-top: -10px;"/> </a></div>
+            <input type="text" placeholder="Введите район по которому хотите узнать информацию" class="search" style="background-color: #B3F4D9">
+            <div class="buttons">
+              <button class="button button-primary" onclick="document.getElementById('id01').style.display='block'">
+                <img src="img/user.svg" alt="user" class="button-icon">
+                <span class="button-text" id="cart-button">Войти</span>
+              </button>
+            </div>
+          </header>
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <div class="modal-content">
+          <div class="container">
+          <h1>Авторизация</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" type="email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="psw" required>
+            <div class="clearfix">
+                <div class="buttonser">
+              <div class="bye">
+              <button type="submit" class="signupbtn">Войти</button>
+              </div>
+      
+              <div class="bye">
+                  <button class="rag" onclick="document.getElementById('registration').style.display='block'; document.getElementById('id01').style.display='none'">Зарегестрироваться</button>
+              </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      
+      <div id="registration" class="modal">
+          <span onclick="document.getElementById('registration').style.display='none'" class="close" title="Close Modal">×</span>
+          <form class="modal-content" action="check.php" method="post">
+            <div class="container">
+              <h1>Регестрация</h1>
+              
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Password" name="psw" required>
+      
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <div class="clearfix">
+                <div class="bye">
+                <button  type="submit" class="rag">Зарегестрироваться</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      
+    
+</body>

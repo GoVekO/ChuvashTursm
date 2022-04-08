@@ -1,0 +1,335 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+}
+/* body{
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    background-image: url(../img/2io.jpg);
+    background-repeat: no-repeat; 
+} */
+.buttons{
+    align-items: center;
+    margin-bottom: 15px;
+}
+.container {
+    /* Макс. ширина */
+    align-items: center;
+    /* Ровнение на центр */
+    margin:auto;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: -4px;
+}
+.rek{
+    margin: auto;
+    max-width: 350px;
+    text-align:center; 
+    padding-top: 60px; 
+    padding-bottom: 20px;
+    margin-left: 40%;
+    border: 2px solid gray;
+}
+.line{
+    max-width: 30%;
+    margin: auto;
+    text-align:center;
+    max-height: 2px;
+    z-index: 2;
+    margin-bottom: 50px;
+    margin-left: 60px;
+}
+.search{
+    background: rgba(196, 196, 196, 0.5);
+    border: 2px solid #D9D9D9;
+    border-radius: 10px;
+    font-size: 16px;
+    background-repeat: no-repeat;
+    padding: 10px 160px;
+    padding-left: 15px;
+    flex: 0.8;
+}
+.button-primary{
+  background:#25c9d5;
+  /* border: 1px solid #1890FF; */
+  color: #fff;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 8px 15px;
+  font-size: 16px;
+  left: 0px;
+  right:0px;
+}
+
+.block{
+    border: 1.5px solid gray;
+    border-radius: 7px;
+    width: 250px;
+    height: 650px;
+    margin: auto;
+    background:white;
+    transition: 0.3s;
+/* выдвижение
+    transition: 0.3s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); */
+}
+
+.block:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px black;
+}
+.blocker{
+    margin-bottom: 10px;
+    display: flex;
+    left: 0px;
+    right: 0px;
+    margin-left: 2%;
+}
+
+.block1{
+    border: 1.5px solid gray;
+    border-radius: 7px;
+    width: 270px;
+    height: 400px;
+    margin: auto;
+    background:white;
+    transition: 0.3s;
+/* выдвижение
+    transition: 0.3s;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); */
+}
+
+.block1:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px black;
+}
+
+.text1 {
+    margin-right: 200px;
+    font-size: 25px;
+    color: #000;
+    height: 180px;
+}
+.text2 {
+    margin-top: -5px;
+    margin-bottom: 25px;
+    margin-right: 210px;
+    font-size: 25px;
+    color: #000;
+    height: 180px;
+}
+.container1 {
+    left: 0px;
+    right: 0px;
+    margin-top: -10px;
+    margin-right: -60px;
+}
+.container2 {
+    margin-top: -10px;
+    align-items: center;
+    /* Ровнение на центр */
+    margin:auto;
+    
+}
+/* .text1::after {
+    content: '';
+    position: absolute;
+    display: flex;
+    margin-left: 65px;
+    width: 300px;
+    height: 200px;
+    background: url(../img/io.jpg) left 0 no-repeat;
+    object-fit: cover;
+} */
+/* .text2::before {
+    
+    content: '';
+    position: absolute;
+    display: flex;
+    margin-left: 65px;
+    width: 100px;
+    height: 100px;
+    top: 80px;
+    background: url(../img/io.jpg) left 0 no-repeat;
+} */
+/* .text3::before{
+    
+    content: '';
+    position: absolute;
+    display: flex;
+    margin-left: 65px;
+    width: 100px;
+    height: 100px;
+    top: 80px;
+    background: url(../img/) left 0 no-repeat;
+} */
+
+/* РЕГИСТРАЦИЯ */ 
+* {box-sizing: border-box}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+/* Add a background color when the inputs get focus */
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for all buttons */
+button {
+    background-color:#25c9d5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+.buttonser{
+    height: 10em;
+    position: relative;
+}
+div.buttonser .rag{
+    margin: 0;
+    position: absolute;
+    top: -30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+
+button:hover {
+    opacity:1;
+}
+/* Float cancel and signup buttons and add an equal width */
+.rag, .signupbtn {
+    width: 40%; 
+    display:flex;
+    justify-content: center;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color:#25c9d5;
+}
+.rag{
+    min-width: 150px;
+}
+.bye{
+    height: 10em;
+    position: relative;    
+}
+div.bye .signupbtn{
+    margin: 0;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) 
+}
+.signupbtn{
+    min-width: 80px;
+}
+.signupbtn:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px black;
+}
+.rag:hover {
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px black;
+}
+    /* Add padding to modal elements */
+.container {
+    
+    padding: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2002; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow:none; /* Enable scroll if needed */
+    background-color:rgba(0, 0, 0, 0.4);
+    padding-top: 50px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 40%; /* Could be more or less, depending on screen size */
+    border-radius: 10px;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+ 
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 35px;
+    top: 15px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #f1f1f1;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    cursor: pointer;
+}
+
+/* Clear floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+    .rag, .signupbtn {
+       width: 100%;
+    }
+}
+
+/*  */
+.podrobnee:hover{
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    box-shadow: 0px 0px 5px 0px black;
+    background-color: rgba(0, 0, 0, 0.775);
+}

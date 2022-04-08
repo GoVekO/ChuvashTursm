@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сайт по развитию туризма в Чувашии</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/chapaev.css">
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <script src="../js/main.js"></script>
+    <link rel="stylesheet" href="../css/menu2.css">
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" hidden>
+<nav class="nav">
+<label for="nav-toggle" class="nav-toggle" onclick></label>
+<h2 class="logo"> <a href="../index.html">Чувашия</a> </h2>
+<ul>
+    <li><a href="../index2.html">Музеи</a>
+    <li><a href="#2">Экскурсии</a>
+    <li><a href="#2">Туры</a>
+    <li><a href="#3" class="contacts">Контакты</a>
+</ul>
+</nav>
+
+<main>
+    <div class="container">
+        <header class="header">
+            <div class="Logo"><a href="../index.html"><img src="../img/logotip.jpg" alt="Logo" width="128" height="72" style="margin-left: 50px; border-radius: 20px; margin-top: -10px;"/> </a></div>
+            <input type="text" placeholder="Введите район по которому хотите узнать информацию" class="search" style="background-color: #B3F4D9">
+            <div class="buttons">
+              <button class="button button-primary" onclick="document.getElementById('id01').style.display='block'">
+                <img src="../img/user.svg" alt="user" class="button-icon">
+                <span class="button-text" id="cart-button">Войти</span>
+              </button>
+            </div>
+          </header>
+    </div>
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">×</span>
+        <div class="modal-content">
+          <div class="container">
+          <h1>Авторизация</h1>
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Email" type="email" name="email" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Password" name="psw" required>
+            <div class="clearfix">
+                <div class="buttonser">
+              <div class="bye">
+              <button type="submit" class="signupbtn">Войти</button>
+              </div>
+      
+              <div class="bye">
+                  <button class="rag" onclick="document.getElementById('registration').style.display='block'; document.getElementById('id01').style.display='none'">Зарегестрироваться</button>
+              </div>
+                </div>
+            </div>
+          </div>
+      </div>
+      </div>
+      
+      <div id="registration" class="modal">
+          <span onclick="document.getElementById('registration').style.display='none'" class="close" title="Close Modal">×</span>
+          <form class="modal-content" action="check.php" method="post">
+            <div class="container">
+              <h1>Регестрация</h1>
+              
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Email" name="email" required>
+        
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Password" name="psw" required>
+      
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              
+              <div class="clearfix">
+                <div class="bye">
+                <button  type="submit" class="rag">Зарегестрироваться</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      
+        <!-- ОСНОВА -->
+        <div style="align-items: center;margin:auto;">
+        <div class='slide' style="margin: auto; margin-left: 100px; padding-left: 0px; float:left; ">
+          <input type="radio" name="slider2" id="slider2_1" checked="checked" >
+          <label for="slider2_1"><img style="width: 100px; height: 75px; border-radius: 5px; transition: 0.3s; " src="../img/Chapay.jpg" align="right" class="rar"></label>
+          <div><p>Музей Василия Ивановича Чапаева</p><img class="rr" src="../img/Chapay.jpg"></div>
+          <label for="slider2_2"></label>
+      
+          <input type="radio" name="slider2" id="slider2_2">
+          <label for="slider2_2"><img style="width: 100px; height: 75px; border-radius: 5px; transition: 0.3s;" src="../img/Chapay1.jpg"  align="right"  class="rar"></label>
+          <div><p>Музей Василия Ивановича Чапаева</p> <img class="rr" src="../img/Chapay1.jpg"></div>
+          <label for="slider2_3"></label>
+      
+          <input type="radio" name="slider2" id="slider2_3">
+          <label for="slider2_3"><img style="width: 100px; height: 75px; border-radius: 5px; transition: 0.3s;" src="../img/Chapay2.jpg"  align="right"  class="rar"></label>
+          <div><p>Музей Василия Ивановича Чапаева</p> <img class="rr" src="../img/Chapay2.jpg"></div>
+          <label for="slider2_4"></label>
+
+          <input type="radio" name="slider2" id="slider2_4">
+          <label for="slider2_4"><img style="width: 100px; height: 75px; border-radius: 5px; transition: 0.3s;" src="../img/Chapay3.jpg"  align="right"  class="rar"></label>
+          <div><p>Музей Василия Ивановича Чапаева</p> <img class="rr" src="../img/Chapay3.jpg"></div>
+          <label for="slider2_5"></label>
+
+          <input type="radio" name="slider2" id="slider2_5">
+          <label for="slider2_5"><img style="width: 100px; height: 75px; border-radius: 5px; transition: 0.3s;" src="../img/Chapay4.jpg"  align="right"  class="rar"></label>
+          <div><p>Музей Василия Ивановича Чапаева</p> <img class="rr" src="../img/Chapay4.jpg"></div>
+          <label for="slider2_6"></label>
+        </div >
+      <!-- <p align="left" style="max-width: 300px;  overflow-x:hidden; max-height: 350px;float:right; margin-left: 50px;border: 1.5px solid gray; margin-right: 180px; margin-top: -380px;">Выфвфы вфы выф ввфыв фВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ыВыфвфы вфы выф ввфыв фывфывфывыфы выф вф ыф ф ф ффвыфвфвфыв ы</p> -->
+      <div><p align="center" style="width: 400px; height: 350px;float:right; border: 1.5px solid gray; margin-right: 80px; font-size: 25px; display: block; padding-bottom: 50px;
+     "><strong>На протяжении 40 лет здесь бережно хранят память о легендарном земляке.<br> <br>Сегодня Чапаев стал брендом Чебоксар. В его честь названы улицы и поселки, его двойник встречает многочисленных туристов в речном порту, а без посещения музея, посвященного Василию Ивановичу, не обходится ни одна обзорная экскурсия.</strong></p></div>
+    </div>
+    <div style="float: left;position:static; margin-top: 10px; margin-left: 10.2%; border: 1.5px solid gray; width: 1040px; border-radius: 10px; padding: 10px;">
+        
+      <p align='left' style="font-size: 25px;">Музей расположен в центре столицы Чувашской Республики. В музейный комплекс входят сквер Чапаева, здание музея В.И. Чапаева, мемориальный дом Чапаевых, памятник В.И. Чапаеву (скульптор П. Баландин, архитектор В. Морозов), мемориальная стена с барельефами Д.А. Фурманова, М.В. Фрунзе, М.Н. Тухачевского, В.В. Куйбышева, И.С. Кутякова (скульптор Э. Агоян).</p>
+    </div>
+    <div style="float: left;position:static; margin-top: 10px; margin-left: 10.2%; border: 1.5px solid gray; width: 1040px; border-radius: 10px; padding: 10px;">
+        
+      <h1 align="center">Услуги</h1>
+      <p style="font-size: 25px; width: 1000px;">Посещение закрыто в связи с проведением в 2018 - 2019 годах реставрации объекта культурного наследия «Дом, в котором родился и жил Василий Иванович Чапаев» и ремонта здания Музея В.И. Чапаева.</p> 
+    </div> 
+    <div style="float: left;position:static; margin-top: 10px; margin-left: 10.2%; border: 1.5px solid gray; width: 1040px; border-radius: 10px; padding: 10px;">
+        
+      <h1 align="center">Контакты</h1>
+      <p style="font-size: 20px; width: 1000px;">Страница "ВКонтакте"</p> 
+      <ul>
+        <li style="font-size: 20px; width: 1000px;"><a href="http://vk.com/public37146439">Музей Василия Ивановича Чапаева</a></li>
+      </ul>
+      <p style="font-size: 20px; width: 1000px;">Электронная почта</p> 
+      <ul>
+        <li style="font-size: 20px; width: 1000px;">E-mail: muschapaev@mail.ru</li>
+      </ul>
+      <p style="font-size: 20px; width: 1000px;">Номер телефона</p> 
+      <ul>
+        <li style="font-size: 20px; width: 1000px;">+7 (8352) 56-20-61</li>
+      </ul>
+    </div> 
+  </div> 
+  </main>
+     <!--  word-break: break-all; РАЗДЕЛЕНИЕ - ПЛОХОЕ -->
+    <footer>
+      <div>
+        
+      <div align="left" style="float: left; padding-left: 15%; margin-left: 30px; background-color:#186460; color: white; margin-top: 20px; border-radius: 20px 80px 0px 0px ; width: 1300px;">
+        
+        <div><p style="font-size: 20px;">Социальные сети:</p> 
+      <ul>
+        <li style="font-size: 20px;">VK - Поддержка</li>
+        <li style="font-size: 20px;">Instagram - Фото/Новости</li>
+        <li style="font-size: 20px;">Telegram - Интересные фаткы о Чувашии</li>
+      </ul>
+    </div>
+    <!--  -->
+        <div style="float: right; margin-top: -145px; margin-right: 20%;"><p style="font-size: 20px;">Авторы:</p> 
+      <ul>
+        <li style="font-size: 20px; list-style-type: none;"><p style=" text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.857);">Яковлев Александр - Ведущий разработчик</p> </li>
+        <li style="font-size: 20px; list-style-type: none;"><p style=" text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.857);">Иван Баранов - Разработчик</p></li>
+        <li style="font-size: 20px; list-style-type: none;"><p style=" text-shadow: 1.5px 1.5px 0px rgba(0, 0, 0, 0.857);">Руководитель - Павлова Ирина Андреевна</p></li>      </ul>
+    </div>
+</div>
+</div>
+    </footer>
+</body>

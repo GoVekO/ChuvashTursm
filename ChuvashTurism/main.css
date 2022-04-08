@@ -1,0 +1,7 @@
+main{
+    background-image: url(../img/io2.jpg);
+    background: linear-gradient(180deg, rgba(245, 245, 245, 0) 1.04%, #F5F5F5 100%);
+    background-repeat: no-repeat; 
+    align-items: center;
+    max-height: 1000px;
+}

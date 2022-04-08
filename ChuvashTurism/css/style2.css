@@ -1,0 +1,171 @@
+[data-sal|=slide].sal-animate, body.sal-disabled [data-sal|=slide]{
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+}
+.homefonter{
+    margin-top: 150px;
+    margin-left: 200px;
+    color: white;
+    font-size: 100px;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.3);
+}
+.homemusfonts{
+    bottom: 0px;
+    margin-left: 200px;
+    color: white;
+    font-size: 25px;
+    text-shadow: 4px 4px 6px rgba(0,0,0,0.3)
+}
+.imuger{
+    width: 250px;
+    height: 200px;
+    margin-top: -28px;
+    margin-left: -50px;
+    margin-right: -50px;
+    border-radius: 5px;
+}
+.imuger1{
+    width: 270px;
+    height: 200px;
+    margin-top: -28px;
+    margin-left: -50px;
+    margin-right: -50px;
+    border-radius: 5px;
+}
+.voskl
+{
+    transition: .5s linear;
+    width: 25px;
+    height: 25px;
+}
+.voskl:hover+.voskl-text{
+    display: block;
+    color: black;
+    margin-bottom: 20px;
+}
+.voskl:hover{
+    background-color: rgba(0, 217, 255, 0.405);
+    border-radius: 30%;
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+.voskl-text{
+    padding: 4px;
+    display: none;
+    z-index: 5000;
+    border: 0.25px solid gray;
+    border-radius: 30px;
+    position: fixed;
+    transition: 0.5s;
+}
+.voskl-text:hover{
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1); 
+}
+h1{
+    width: 100%;
+}
+.pidpis{
+    margin-top: -80px;
+    color:lightseagreen;
+    font-size: 15px;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 18px;
+}
+.addres{
+    color:black;
+    font-size: 18px;
+
+}
+.raspisanie{
+    color:black;
+    font-size: 18px;
+}
+
+
+
+.slide {
+    width: 667px;
+    height: 400px;
+    border: 1px solid #888;
+    position: relative;
+    text-align: center;
+    border-radius: 2%;
+}
+.slide  input {
+    display: none;
+}
+label{
+    margin-left: 35px;
+    margin-right: 35px;
+}
+.slide  input + label {
+    display: inline-block;
+    visibility: visible;
+    width: 35px;
+    height: 10px;
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    z-index: 100;
+    position: relative;
+
+    margin-right: 7px;
+    top: 70%;
+
+}
+.slide  div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 0;
+}
+
+.slide  div {
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0.9s;
+}
+
+.rr {
+    width:667px;
+    height:400px;
+    border-radius: 2%;
+}
+
+.slide  input:checked + label + div {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.8s ease-out 0.1s, visibility 0.1s ease-out 0s;
+}
+
+.slide  div  p {
+    position: absolute;
+    font-size:18px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px 2px 3px #222;
+}
+.rar:hover{
+    box-shadow: 0px 0px 11px 5px rgb(38, 34, 34);
+    -webkit-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+    filter:alpha(opacity=100);  /*  для IE 5.5+ */
+    -moz-opacity:1;  /* для Mozilla 1.6 и ниже */
+    -khtml-opacity:1;  /* для Konqueror 3.1, Safari 1.1 */
+    opacity:1; /* для Mozilla 1.7b+, Firefox 0.9+, Safari 1.2+, Opera 9 */
+}
+.rar{
+    filter: alpha(opacity=50); opacity: 0.5;
+}
